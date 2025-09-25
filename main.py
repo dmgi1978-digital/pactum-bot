@@ -4,7 +4,8 @@ from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 # ТВОЙ ТОКЕН ОТ @BotFather
-BOT_TOKEN = "7661680376:AAG2uK8a0hWyO3Jzti0ikXfR0pak9ot5UNs"
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
